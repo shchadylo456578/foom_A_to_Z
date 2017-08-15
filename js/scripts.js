@@ -1,15 +1,13 @@
-/**
- * Created by nazariibanakh on 5/3/17.
- */
+$ (function() {
+  $('.menuToggle') .on('click', function(){
 
-var name = 'Test';
+    $('.menu') .slideToggle(300, function(){
 
-name = name + 1;
+      if($(this).css('display') ===  'none') {
+        $(this).removeAttr('style');
+      }
 
-/**
- * Created by nazariibanakh on 5/3/17.
- */
+      });
+    });
+});
 
-var name = 'Test2';
-
-name = name + 2;
