@@ -4,27 +4,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>From A to Z</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-  <div class="header">
-    <div class="wrapper">
-      <div class="img-logo"><img src="images/logo.png" alt="logo"></div>
-    </div>
-  </div>
-  <div class="nav-background">
-    <nav>
+  <div id="home">
+    <div class="header-nav">
       <div class="wrapper">
-        <div class="menuToggle"><img src="images/sandwich-menu.png" alt="sandwich-menu">
-          <!--span buy now-->
+        <div class="header">
+          <div class="img-logo"><a class="active" href="#home"><img src="images/logo.png" alt="logo"></a></div>
+          <div class="menuToggle"><img src="images/sandwich-menu.png" alt="sandwich-menu"></div>
         </div>
       </div>
-      <ul class="menu">
-        <li><a href="#">buy now</a></li>
-        <li><a href="#">reviews</a></li>
-        <li><a href="#">formats</a></li>
-      </ul>
-    </nav>
+      <div class="clearfix"></div>
+      <div class="nav-background">
+        <nav>
+          <ul class="menu">
+            <li><a href="#buy-now">buy now</a></li>
+            <li><a href="#reviews">reviews</a></li>
+            <li><a href="#formats">formats</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
   <div class="wrapper">
     <div class="headline">
@@ -51,25 +52,29 @@
           </div>
           <div class="item-devices-photo"><img class="item item-1" src="images/tablet.png" alt="tablet-photo"><img class="item item-2" src="images/phone.png" alt="phone-photo"><img class="item item-3" src="images/computers.png" alt="computers-photo"></div>
         </div>
-        <div class="item-reviews">
-          <div class="item-text-reviews">
-            <h1>Book Reviews</h1>
-            <p>Not convinced your children will love this book? Read the reviews from happy customers across the globe.</p>
+        <div id="reviews">
+          <div class="item-reviews">
+            <div class="item-text-reviews">
+              <h1>Book Reviews</h1>
+              <p>Not convinced your children will love this book? Read the reviews from happy customers across the globe.</p>
+            </div>
+            <div class="item-photo-reviews">
+              <div class="img-whale"><img src="images/whale.png" alt="whale-photo"></div><img src="images/kid.png" alt="kid-photo"><img src="images/kid-text.png" alt="text">
+              <p>My little guy absolutely loved the book. He took it<br>everywhere he went. The picture is of him<br>reading it in his bedroom. Found him trying to<br>stay up late to read more.</p>
+            </div>
+            <div class="item-photo-reviews"><img src="images/old-people.png" alt="old-people-photo"><img src="images/old-people-text.png" alt="text">
+              <p>My third-graders are in love with this book.<br>Every time I start class, all they can say is.<br>"A to Z, Please Mrs. Lanning."</p>
+            </div>
+            <div class="item-photo-reviews">
+              <div class="img-balloon"><img src="images/balloons.png" alt="balloons-photo"></div><img src="images/women.png" alt="women-photo"><img src="images/women-text.png" alt="text">
+              <p>Me and my daughter have bonded<br>over this book and we bring it on all<br>our trips. Thank you for such<br>beautiful illustrations.</p>
+            </div>
           </div>
-          <div class="item-photo-reviews">
-            <div class="img-whale"><img src="images/whale.png" alt="whale-photo"></div><img src="images/kid.png" alt="kid-photo"><img src="images/kid-text.png" alt="text">
-            <p>My little guy absolutely loved the book. He took it<br>everywhere he went. The picture is of him<br>reading it in his bedroom. Found him trying to<br>stay up late to read more.</p>
+          <div id="formats">
+            <div class="box-inform-img">
+              <div class="img-bookboy"></div>
+            </div>
           </div>
-          <div class="item-photo-reviews"><img src="images/old-people.png" alt="old-people-photo"><img src="images/old-people-text.png" alt="text">
-            <p>My third-graders are in love with this book.<br>Every time I start class, all they can say is.<br>"A to Z, Please Mrs. Lanning."</p>
-          </div>
-          <div class="item-photo-reviews">
-            <div class="img-balloon"><img src="images/balloons.png" alt="balloons-photo"></div><img src="images/women.png" alt="women-photo"><img src="images/women-text.png" alt="text">
-            <p>Me and my daughter have bonded<br>over this book and we bring it on all<br>our trips. Thank you for such<br>beautiful illustrations.</p>
-          </div>
-        </div>
-        <div class="box-inform-img">
-          <div class="img-bookboy"></div>
         </div>
       </div>
     </div>
@@ -82,22 +87,24 @@
       </div>
     </div>
   </div>
-  <div class="wrapper">
-    <div class="discount">
-      <div class="discount-text">
-        <h1>Discount Price $19.99</h1>
-        <p>Retail Price
-          <strike>$39.99</strike>
-        </p>
-      </div>
-      <div class="button-discount">
-        <div class="item-1"><img src="images/arrow-left.png" alt="arrow-left"></div>
-        <div class="item">
-          <button class="button">activate discount</button>
+  <div id="buy-now">
+    <div class="wrapper">
+      <div class="discount">
+        <div class="discount-text">
+          <h1>Discount Price $19.99</h1>
+          <p>Retail Price
+            <strike>$39.99</strike>
+          </p>
         </div>
-        <div class="item-1"><img src="images/arrow-right.png" alt="arrow-right"></div>
+        <div class="button-discount">
+          <div class="item-1"><img src="images/arrow-left.png" alt="arrow-left"></div>
+          <div class="item">
+            <button class="button">activate discount</button>
+          </div>
+          <div class="item-1"><img src="images/arrow-right.png" alt="arrow-right"></div>
+        </div>
+        <div class="img-discount"><img src="images/card-discount.png" alt="image-card"></div>
       </div>
-      <div class="img-discount"><img src="images/card-discount.png" alt="image-card"></div>
     </div>
   </div>
   <div class="footer">
