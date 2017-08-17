@@ -141,17 +141,6 @@
   </script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/scripts.min.js"></script>
-  <script>
-    jQuery.loadAsync = function(url, callback) {
-      // Don't use $.getScript since it disables caching
-      jQuery.ajax({
-        'url': url,
-        'dataType': 'script',
-        'cache': true,
-        'success': callback || jQuery.noop
-      });
-    };
-  </script>
 </body>
 <!--#loadingMask(style='width: 100%; height: 100%; position: fixed; background: #fff; top: 0; left: 0; z-index: 100;' ) Loading...//.container
 -->
