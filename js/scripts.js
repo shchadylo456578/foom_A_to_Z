@@ -1,7 +1,3 @@
-//$(window).ready( function(){
-//  $('#loadingMask').fadeOut();
-//  $('.container').addClass('load');
-//});
 $(document).ready( function() {
 
     $('.menuToggle') .on('click', function(){
